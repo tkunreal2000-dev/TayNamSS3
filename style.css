@@ -1,0 +1,197 @@
+/* ===== Giao diện chung cho các trang con (phong cách pixel) ===== */
+:root {
+  --nen: #1b1f3b;
+  --nen-sang: #272c55;
+  --the: #fff8e7;
+  --chu: #2b2b3d;
+  --nhan: #ffcc33;
+  --xanh: #3ddc97;
+  --do: #ff5d73;
+  --vien: #0d0f22;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
+  background-color: var(--nen);
+  background-image:
+    linear-gradient(45deg, var(--nen-sang) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--nen-sang) 25%, transparent 25%);
+  background-size: 32px 32px;
+  color: var(--chu);
+  line-height: 1.6;
+}
+
+/* ----- Thanh điều hướng ----- */
+.thanh-menu {
+  background: var(--vien);
+  border-bottom: 4px solid var(--nhan);
+  padding: 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.thanh-menu .logo {
+  color: var(--nhan);
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-right: 12px;
+  text-transform: uppercase;
+}
+.thanh-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 3px solid transparent;
+  font-weight: 600;
+}
+.thanh-menu a:hover { border-color: var(--nhan); }
+.thanh-menu a.dang-chon {
+  background: var(--nhan);
+  color: var(--vien);
+  border-color: var(--vien);
+}
+
+/* ----- Khung nội dung ----- */
+.khung {
+  max-width: 960px;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+.tieu-de {
+  color: #fff;
+  text-align: center;
+  margin: 8px 0 24px;
+  text-shadow: 4px 4px 0 var(--vien);
+  font-size: 2rem;
+}
+.tieu-de small {
+  display: block;
+  font-size: 1rem;
+  color: var(--nhan);
+  text-shadow: none;
+  margin-top: 4px;
+}
+
+.the {
+  background: var(--the);
+  border: 4px solid var(--vien);
+  box-shadow: 8px 8px 0 var(--vien);
+  padding: 20px 22px;
+  margin-bottom: 26px;
+}
+.the h2 {
+  margin-top: 0;
+  display: inline-block;
+  background: var(--nhan);
+  border: 3px solid var(--vien);
+  padding: 2px 12px;
+  font-size: 1.15rem;
+}
+
+.luoi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.o {
+  background: #fff;
+  border: 3px solid var(--vien);
+  padding: 14px;
+}
+.o b { display: block; margin-bottom: 4px; }
+
+/* ----- Nút ----- */
+.nut {
+  display: inline-block;
+  background: var(--xanh);
+  color: var(--vien);
+  font-weight: 800;
+  text-decoration: none;
+  padding: 12px 22px;
+  border: 4px solid var(--vien);
+  box-shadow: 5px 5px 0 var(--vien);
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.nut:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--vien); }
+.nut.do { background: var(--do); color: #fff; }
+
+/* ----- Khung chơi game ----- */
+.man-game {
+  border: 4px solid var(--vien);
+  box-shadow: 8px 8px 0 var(--vien);
+  background: #000;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+.man-game iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* ----- Biểu mẫu ----- */
+label { display: block; font-weight: 700; margin: 12px 0 4px; }
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid var(--vien);
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fff;
+}
+textarea { min-height: 120px; resize: vertical; }
+
+/* ----- Trang chủ ----- */
+.anh-bia {
+  background: var(--the);
+  border: 4px solid var(--vien);
+  box-shadow: 8px 8px 0 var(--vien);
+  text-align: center;
+  padding: 48px 20px;
+  margin-bottom: 28px;
+}
+.anh-bia h1 {
+  margin: 0 0 8px;
+  font-size: 2.6rem;
+  text-shadow: 4px 4px 0 var(--nhan);
+}
+.anh-bia p { margin: 0 0 24px; font-size: 1.1rem; }
+
+.luoi-lon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.the-lien-ket {
+  display: block;
+  background: var(--the);
+  color: var(--chu);
+  text-decoration: none;
+  border: 4px solid var(--vien);
+  box-shadow: 8px 8px 0 var(--vien);
+  padding: 18px 20px;
+}
+.the-lien-ket:hover { transform: translate(3px, 3px); box-shadow: 5px 5px 0 var(--vien); }
+.the-lien-ket h2 { margin: 0 0 6px; }
+.the-lien-ket p { margin: 0; }
+
+.chan {
+  text-align: center;
+  color: #c9cbe6;
+  padding: 24px 16px 40px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+  .tieu-de { font-size: 1.5rem; }
+  .thanh-menu .logo { width: 100%; text-align: center; margin: 0 0 4px; }
+}

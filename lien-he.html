@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="thanh-menu">
+    <span class="logo">Game học đường</span>
+    <a href="index.html">Trang chủ</a>
+    <a href="thong-tin-truong.html">Thông tin trường</a>
+    <a href="game.html">Chơi game</a>
+    <a href="lien-he.html" class="dang-chon">Liên hệ</a>
+  </nav>
+
+  <main class="khung">
+    <h1 class="tieu-de">Liên hệ
+      <small>Góp ý, báo lỗi hoặc đóng góp câu hỏi cho game</small>
+    </h1>
+
+    <section class="the">
+      <h2>Gửi góp ý</h2>
+
+      <!--
+        SỬA: thay your-email@example.com bằng email thật của bạn.
+        Biểu mẫu này mở ứng dụng email của người dùng để gửi thư,
+        nên không cần máy chủ. Nếu muốn nhận trực tiếp trên web,
+        bạn có thể dùng dịch vụ như Formspree hoặc Google Forms.
+      -->
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="ten">Tên của bạn</label>
+        <input id="ten" name="ten" type="text" placeholder="Nguyễn Văn A" required>
+
+        <label for="lop">Lớp</label>
+        <input id="lop" name="lop" type="text" placeholder="Ví dụ: 8A2">
+
+        <label for="noidung">Nội dung</label>
+        <textarea id="noidung" name="noidung" placeholder="Bạn muốn góp ý hoặc đề xuất câu hỏi gì?" required></textarea>
+
+        <p style="margin-top:18px">
+          <button class="nut" type="submit">Gửi</button>
+        </p>
+      </form>
+    </section>
+
+    <section class="the">
+      <h2>Thông tin liên hệ</h2>
+      <div class="luoi">
+        <div class="o"><b>Email</b>[Email của bạn hoặc của trường]</div>
+        <div class="o"><b>Điện thoại</b>[Số điện thoại]</div>
+        <div class="o"><b>Địa chỉ</b>[Địa chỉ trường]</div>
+      </div>
+    </section>
+
+    <section class="the" style="text-align:center">
+      <h2>Quay lại game</h2>
+      <p>Góp ý xong rồi thì tiếp tục hành trình thôi.</p>
+      <a class="nut" href="game.html">Chơi game</a>
+    </section>
+  </main>
+
+  <footer class="chan">© [Năm] [TÊN TRƯỜNG] · Làm bằng GDevelop</footer>
+
+</body>
+</html>

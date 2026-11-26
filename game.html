@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chơi game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="thanh-menu">
+    <span class="logo">Game học đường</span>
+    <a href="index.html">Trang chủ</a>
+    <a href="thong-tin-truong.html">Thông tin trường</a>
+    <a href="game.html" class="dang-chon">Chơi game</a>
+    <a href="lien-he.html">Liên hệ</a>
+  </nav>
+
+  <main class="khung">
+    <h1 class="tieu-de">Chơi game
+      <small>Đi quanh trường, gặp bạn bè và trả lời câu hỏi</small>
+    </h1>
+
+    <!--
+      Khung dưới đây nhúng game GDevelop nằm trong thư mục "game"
+      (file game/index.html). Nếu đổi tên thư mục, sửa đường dẫn src cho khớp.
+    -->
+    <div class="man-game">
+      <iframe src="game/index.html" title="Game học đường" allowfullscreen allow="autoplay; fullscreen"></iframe>
+    </div>
+
+    <p style="text-align:center; margin:22px 0">
+      <a class="nut" href="game/index.html" target="_blank" rel="noopener">Mở game toàn màn hình</a>
+    </p>
+
+    <section class="the">
+      <h2>Cách chơi</h2>
+      <div class="luoi">
+        <div class="o"><b>1. Di chuyển</b>Dùng phím mũi tên (hoặc chạm trên điện thoại) để đi quanh trường.</div>
+        <div class="o"><b>2. Gặp nhân vật</b>Đến gần bạn học hoặc thầy cô để bắt đầu trận hỏi đáp.</div>
+        <div class="o"><b>3. Trả lời</b>Chọn 1 trong 4 đáp án. Đúng thì gây sát thương, sai thì mất máu.</div>
+        <div class="o"><b>4. Sưu tầm</b>Thắng nhiều trận để nhận huy hiệu theo từng môn học.</div>
+      </div>
+    </section>
+
+    <!-- SỬA: cập nhật phần Cách chơi cho khớp với game thật của bạn -->
+  </main>
+
+  <footer class="chan">© [Năm] [TÊN TRƯỜNG] · Làm bằng GDevelop</footer>
+
+</body>
+</html>
